@@ -1,55 +1,10 @@
-# First
-package first;
+# Второе ДЗ
+Выведите результаты в браузер любым удобным вам способом.
 
-import java.util.Scanner;
+1 Создайте форму на веб-странице, в которую вводятся два числа m и n. Выведите ближайшее к 10. Например, среди чисел 8,5 и 11,45 ближайшее к десяти 11,45.
 
-public class First {
+2 Создайте форму для ввода трех целых чисел a,b,c для формулы ax²+bx+c=0. Выведите корни уравнения, либо сообщите, что корней нет.
 
-	public static void main(String[] args) {
-		
-		Scanner scn  =  new Scanner(System.in);
-		
-		System.out.println("Введите первое число");
-		double x = scn.nextDouble();
-		
-		System.out.println("Введите второе число");
-		double y = scn.nextDouble();
-		
-		if(x<10){
-			if(y<10){
-				if(x>y){
-					System.out.println(x);	
-				}else {
-					System.out.println(y);	
-				} 
-				}else{
-					x = 10-x;
-					y = y-10;
-					if(x<y){
-						System.out.println(x+10);
-					}else{
-						System.out.println(y+10);
-					}
-				}
-		}else{
-			if(y<10){
-			x = x-10;
-			y = 10-y;
-			if(y<x){
-				System.out.println(y+10);
-			}else{
-				System.out.println(x+10);
-			}
-			}else{
-				if(x>y){
-					System.out.println(y);
-				}else{
-					System.out.println(x);
-				}
-			}
-			}
-		
+3 Создать двумерный массив из 8 строк по 5 столбцов в каждой из случайных целых чисел из отрезка [10;99]. Вывести массив на веб-страницу.
 
-}
-}
-	
+4 Создать двумерный массив из 5 строк по 8 столбцов в каждой из случайных целых чисел из отрезка [-99;99]. Вывести массив на веб-страницу. После этого на отдельной строке вывести на экран значение максимального элемента этого массива (его индекс не имеет значения).
